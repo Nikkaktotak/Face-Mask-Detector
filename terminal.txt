@@ -1,60 +1,41 @@
 "D:\pro\Face Mask Detector\venv\Scripts\python.exe" "D:\pro\Face Mask Detector\main.py" 
-2024-04-01 18:40:33.866006: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2024-04-01 18:40:34.922886: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-01 20:33:48.009374: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-01 20:33:49.422466: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 D:\pro\Face Mask Detector\venv\lib\site-packages\keras\src\layers\reshaping\flatten.py:37: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
   super().__init__(**kwargs)
-2024-04-01 18:40:57.708256: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2024-04-01 20:34:07.759651: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-Model: "sequential"
-┌─────────────────────────────────┬────────────────────────┬───────────────┐
-│ Layer (type)                    │ Output Shape           │       Param # │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ flatten (Flatten)               │ (None, 150528)         │             0 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dense (Dense)                   │ (None, 128)            │    19,267,712 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dense_1 (Dense)                 │ (None, 64)             │         8,256 │
-├─────────────────────────────────┼────────────────────────┼───────────────┤
-│ dense_2 (Dense)                 │ (None, 1)              │            65 │
-└─────────────────────────────────┴────────────────────────┴───────────────┘
- Total params: 19,276,033 (73.53 MB)
- Trainable params: 19,276,033 (73.53 MB)
- Non-trainable params: 0 (0.00 B)
 Epoch 1/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 22s 156ms/step - accuracy: 0.6108 - loss: 1487.6621 - val_accuracy: 0.6371 - val_loss: 1158.5416
+133/133 ━━━━━━━━━━━━━━━━━━━━ 21s 153ms/step - accuracy: 0.6347 - loss: 978.4363 - val_accuracy: 0.6001 - val_loss: 712.2175
 Epoch 2/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 22s 164ms/step - accuracy: 0.7802 - loss: 395.4891 - val_accuracy: 0.5405 - val_loss: 1243.9635
+133/133 ━━━━━━━━━━━━━━━━━━━━ 21s 156ms/step - accuracy: 0.7760 - loss: 297.6464 - val_accuracy: 0.6779 - val_loss: 494.2527
 Epoch 3/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 21s 160ms/step - accuracy: 0.7155 - loss: 620.8050 - val_accuracy: 0.7027 - val_loss: 297.7943
+133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 150ms/step - accuracy: 0.7593 - loss: 248.2143 - val_accuracy: 0.8086 - val_loss: 164.7125
 Epoch 4/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 21s 160ms/step - accuracy: 0.7714 - loss: 216.2785 - val_accuracy: 0.5996 - val_loss: 613.7175
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.7678 - loss: 212.6550 - val_accuracy: 0.8130 - val_loss: 135.5128
 Epoch 5/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 21s 157ms/step - accuracy: 0.8601 - loss: 98.7359 - val_accuracy: 0.7805 - val_loss: 91.3326
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8119 - loss: 120.1748 - val_accuracy: 0.8191 - val_loss: 77.7107
 Epoch 6/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 152ms/step - accuracy: 0.8371 - loss: 63.2761 - val_accuracy: 0.8764 - val_loss: 33.6956
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 146ms/step - accuracy: 0.7882 - loss: 100.3231 - val_accuracy: 0.8764 - val_loss: 33.6354
 Epoch 7/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8787 - loss: 23.7566 - val_accuracy: 0.7612 - val_loss: 70.3590
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 146ms/step - accuracy: 0.8538 - loss: 34.3771 - val_accuracy: 0.6784 - val_loss: 79.0623
 Epoch 8/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8517 - loss: 31.6323 - val_accuracy: 0.7921 - val_loss: 68.3097
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 146ms/step - accuracy: 0.7780 - loss: 52.9306 - val_accuracy: 0.6393 - val_loss: 86.5573
 Epoch 9/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8229 - loss: 49.6300 - val_accuracy: 0.8787 - val_loss: 23.6897
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8123 - loss: 34.5341 - val_accuracy: 0.8753 - val_loss: 18.4238
 Epoch 10/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8696 - loss: 21.3532 - val_accuracy: 0.7104 - val_loss: 60.8081
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8281 - loss: 20.1272 - val_accuracy: 0.8378 - val_loss: 16.5233
 Epoch 11/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8500 - loss: 21.8869 - val_accuracy: 0.7292 - val_loss: 37.0563
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8549 - loss: 12.0555 - val_accuracy: 0.7358 - val_loss: 22.5950
 Epoch 12/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8644 - loss: 16.2926 - val_accuracy: 0.8423 - val_loss: 15.8905
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8492 - loss: 9.7318 - val_accuracy: 0.8296 - val_loss: 6.1447
 Epoch 13/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 153ms/step - accuracy: 0.8607 - loss: 13.9108 - val_accuracy: 0.8726 - val_loss: 11.7088
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 146ms/step - accuracy: 0.8518 - loss: 5.3530 - val_accuracy: 0.8511 - val_loss: 14.7944
 Epoch 14/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 151ms/step - accuracy: 0.8727 - loss: 11.2923 - val_accuracy: 0.8527 - val_loss: 8.7732
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8331 - loss: 9.4379 - val_accuracy: 0.8307 - val_loss: 7.2079
 Epoch 15/15
-133/133 ━━━━━━━━━━━━━━━━━━━━ 20s 149ms/step - accuracy: 0.8690 - loss: 10.8117 - val_accuracy: 0.8731 - val_loss: 13.5551
-Traceback (most recent call last):
-  File "D:\pro\Face Mask Detector\main.py", line 82, in <module>
-    write_epoch_info(epoch, 15, history)
-  File "D:\pro\Face Mask Detector\main.py", line 26, in write_epoch_info
-    for key in history.keys():
-AttributeError: 'History' object has no attribute 'keys'
+133/133 ━━━━━━━━━━━━━━━━━━━━ 19s 145ms/step - accuracy: 0.8707 - loss: 3.3511 - val_accuracy: 0.8720 - val_loss: 3.2411
+48/48 ━━━━━━━━━━━━━━━━━━━━ 1s 11ms/step - accuracy: 0.8573 - loss: 3.6509
+Test Accuracy: 0.859695553779602
 
-Process finished with exit code 1
+Process finished with exit code 0
