@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -10,8 +11,9 @@ from keras.models import Sequential
 from keras.layers import Dense, Flatten
 from keras.optimizers import Adam
 
+
 # Шлях до кореневої папки бази даних
-root_dir = 'D:/Delete/FaceMaskDataset/data'
+root_dir = 'D:/pro/Face Mask Detector/FaceMaskDataset/data'
 
 images = []
 labels = []
@@ -66,4 +68,7 @@ plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend()
+
+# Зберігаємо графіки у файл
+plt.savefig("graphics.png")
 plt.show()
